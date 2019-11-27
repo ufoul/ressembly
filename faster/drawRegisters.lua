@@ -1,0 +1,1 @@
+local a=love.graphics;local b=function(c)local d=a.getWidth()/8;local e=a.getHeight()/#c;for f,g in pairs(c)do for h,i in pairs(g)do love.graphics.setColor(i,i,i)a.rectangle("fill",d*(h-1),e*(f-1),d*h,e*f)end end end;return b

@@ -1,0 +1,1 @@
+local table=table;local a={}a.drawScreen=require"drawRegisters"local function b()local c={}for d=1,8 do table.insert(c,0)end;return c end;local e={}for d=1,8 do table.insert(e,b())end;for f,g in pairs(e)do print()for f,h in pairs(g)do io.write(h)end end;a.swapbit=function(i)return-i+1 end;a.memory=e;return a

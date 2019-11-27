@@ -1,0 +1,83 @@
+() == required argument
+[] == optional argument
+1-8 can be swapped with 1 and 0, 0 being take 1 and 1 being add 1, rules are swapped on even numbers
+
+
+brb:
+
+pbj:
+
+pre ( ):
+	 : sets the pin to what it was just at previouslyyyyyyyyyyyyyyyyyyYTYTYT T Pose No *laughter* (I'm transcribing what just happened.) *more laughter* (Okay, that's enough.)
+
+
+
+
+pin (1-8) [...]:
+	(
+		1: move the pointer up 8 numbers
+		0: move the pointer down 1 number
+	)
+	[
+	...: continuation of previous arguments, goes on infinitely
+	]
+
+swp (1-8) [0,1]:
+	(
+		1-8: which bit of the pointer address to affect
+	)
+	[
+		0: sets bit to 0
+		1: sets bit to 1
+		--will swap the bit if left empty
+	]
+
+
+are (1-8, 1-8)
+	(
+		1-8: which bit of pre to check
+		1-8: which bit of pin to check
+	)
+
+
+are 
+
+are 3,5 {
+	
+}
+
+nani dewashita kawaiii?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+----- LEGACY DOCUMENTATION!! ----- ONLY READ IF YOU'RE GAY -----
+
+pin keyword is for a pointer to a memory location, starts at 1 and can be moved left or right with an
+argument of 0 or 1, 0 being left and 1 being right
+
+all arguemnts separated by a  
+
+all functions ended with a ;
+
+pin 0;
+
+swp keyword is to swap the bit at current pointer location and takes

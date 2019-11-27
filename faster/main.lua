@@ -1,0 +1,1 @@
+local a=require"sidekick"local b=love.graphics;love.window.setMode(512,512)a.memory[1][8]=1;a.memory[4][5]=1;function love.draw()a.drawScreen(a.memory)end
