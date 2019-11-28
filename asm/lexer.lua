@@ -52,7 +52,5 @@ module.lex = function(stringToLex)
 	return lexedTable
 end
 
-local a = module.lex(testLex)
-for i,v in pairs(a) do print(v) end
 
 return module
