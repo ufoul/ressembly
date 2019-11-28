@@ -1,10 +1,20 @@
 local module = {
-	pin  = "pin",
-	swp  = "swap",
-	are  = "compare",
-	iss  = "if",
-	["{"]= "start",
-	["}"]= "end",
+	convert = {
+		pin  = {ilk = "function", args = 1},
+		swp  = {ilk = "function", args = 2},
+		iss  = {ilk = "if"},
+	},
+	convertSpecial = { --when the program sees these characters, it will put the current token onto the lex table and this token
+		["{"]= "start",
+		["}"]= "end",
+		[";"]= "semicolon",
+		[","]= "comma",
+	},
+	whitespace = {
+		[[ ]],
+		"\t",
+		"\n",
+	},
 }
 
 
