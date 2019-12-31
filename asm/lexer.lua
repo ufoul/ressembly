@@ -3,21 +3,21 @@ local table = table
 getmetatable('').__index = function(str,i) return string.sub(str,i,i) end
 
 function table.contains(table1,item)
-  for _,v in pairs(table1) do
-    if v == item then
-      return true
-    end
-  end
-  return false
+	for _,v in pairs(table1) do
+		if v == item then
+			return true
+		end
+	end
+	return false
 end
 
 function table.kontains(table1,item)
-  for k,v in pairs(table1) do
-    if k == item then
-      return true
-    end
-  end
-  return false
+	for k,v in pairs(table1) do
+		if k == item then
+			return true
+		end
+	end
+	return false
 end
 
 
@@ -51,6 +51,7 @@ module.lex = function(stringToLex)
 	end
 	return lexedTable
 end
+
 
 
 return module

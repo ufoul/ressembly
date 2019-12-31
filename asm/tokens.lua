@@ -11,9 +11,9 @@ local module = {
 		[","]= "comma",
 	},
 	whitespace = {
-		[[ ]],
-		"\t",
-		"\n",
+		' ',
+		'\t',
+		'\n',
 	},
 }
 

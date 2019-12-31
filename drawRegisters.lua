@@ -3,22 +3,22 @@ local lk = love.keyboard
 local table = table
 
 function table.contains(table1,item)
-  for _,v in pairs(table1) do
-    if v == item then
-      return true
-    end
-  end
-  return false
+	for _,v in pairs(table1) do
+		if v == item then
+			return true
+		end
+	end
+	return false
 end
 
-local keyMap = {
+local keyMap = {--change these to change the keys or some shit
 	[1]='w',
 	[2]='a',
 	[3]='s',
 	[4]='d',
-	[5]="space",
+	[5]='e',
 	[6]="space",
-	[7]='e',
+	[7]="space",
 	[8]='j',
 }
 

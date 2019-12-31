@@ -1,6 +1,9 @@
 local module = {}
-local lexer = require"lexer"
+local lexer = require "lexer"
 local table = table
+local getmetatable = getmetatable
+local string = string
+local pairs = pairs
 getmetatable('').__index = function(str,i) return string.sub(str,i,i) end
 
 function table.contains(table1,item, kv)
@@ -30,7 +33,7 @@ iss 1 {
 }
 ]]
 
-
+--[[
 module.ast = function(table1)
 	local syntaxTree = {}
 	local tokens = require"tokens"
@@ -42,6 +45,16 @@ module.ast = function(table1)
 		end
 	end
 	return syntaxTree
+end]]
+
+module.ast = function(lexedtable)
+	local tree = {}
+	local tokens = require "tokens"
+	for _,v in pairs(lexedtable) do
+		if table.contains(tokens, v, 1) then
+			table.insert(syntaxTree, {v, tokens[v].args})
+		end
+	end
 end
 
 local testTaste = module.ast(lexer.lex(testLex))
